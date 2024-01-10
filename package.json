@@ -1,0 +1,25 @@
+{
+  "name": "multiapp",
+  "version": "1.0.0",
+  "author": "KitoX1",
+  "license": "ISC",
+  "scripts": {
+    "start:notes": "cd services/notes && npm start",
+    "start:converter": "cd services/converter && npm start",
+    "start:layout": "cd services/layout && npm start",
+    "start:host": "cd services/host && npm start",
+    "start": "concurrently \"npm run start:notes\" \"npm run start:converter\" \"npm run start:layout\" \"npm run start:host\" ",
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production",
+    "typecheck": "tsc",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix"
+  },
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "endOfLine": "lf",
+  "jsonRecursiveSort": true,
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "bracketSpacing": true,
+  "printWidth": 120
+}

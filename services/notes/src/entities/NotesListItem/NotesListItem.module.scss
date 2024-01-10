@@ -1,0 +1,47 @@
+.notesListItem {
+  &__action {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    right: 10px;
+  }
+
+  &__container {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    border-bottom: 1px solid #d3d3d3;
+
+    &:hover {
+      background: #f4f4f4;
+
+      .notesListItem__action {
+        display: block;
+      }
+    }
+  }
+
+  &__contentContainer {
+    display: flex;
+  }
+
+  &__date {
+    font-size: 12px;
+    margin-right: 7px;
+  }
+
+  &__description {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  &__title {
+    text-transform: capitalize;
+    margin: 10px 0 0;
+  }
+}

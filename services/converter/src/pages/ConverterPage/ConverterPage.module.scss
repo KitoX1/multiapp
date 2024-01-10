@@ -1,0 +1,11 @@
+.converterPage {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &__chart {
+    transform: translate(-29px, -65px);
+  }
+}

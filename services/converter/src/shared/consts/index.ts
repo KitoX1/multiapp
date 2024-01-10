@@ -1,0 +1,1 @@
+export { currenciesList } from './currencies';
