@@ -46,15 +46,15 @@ export default (env: EnvVariables) => {
         ...dependencies,
         react: {
           eager: true,
-          // requiredVersion: dependencies['react'],
+          requiredVersion: dependencies.react,
         },
         'react-router-dom': {
           eager: true,
-          // requiredVersion: dependencies['react-router-dom'],
+          requiredVersion: dependencies['react-router-dom'],
         },
         'react-dom': {
           eager: true,
-          // requiredVersion: dependencies['react-dom'],
+          requiredVersion: dependencies['react-dom'],
         },
         'react-redux': {
           eager: true,
